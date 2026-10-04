@@ -12,54 +12,60 @@
       font-family: Arial, sans-serif;
       background: #101827;
       color: white;
-      text-align: center;
+      line-height: 1.9;
     }
-    header { padding: 24px 16px; }
-    header h1 { color: #67e8f9; font-size: 34px; }
+    header {
+      text-align: center;
+      padding: 25px 15px;
+    }
+    header h1 { color: #67e8f9; font-size: 2.3rem; }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
     }
     .hero {
+      text-align: center;
       padding: 65px 20px;
-      background: linear-gradient(135deg, #164e63, #312e81);
+      background: linear-gradient(120deg, #164e63, #312e81);
     }
-    .hero h2 { font-size: 30px; }
-    .hero p { line-height: 1.9; }
+    .hero h2 { font-size: 2.3rem; }
     .button {
       display: inline-block;
       background: #67e8f9;
       color: #101827;
-      padding: 13px 24px;
-      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 12px;
       margin-top: 15px;
+      font-weight: bold;
     }
-    section { padding: 30px 18px; }
-    .card {
-      background: #1e293b;
-      padding: 22px;
-      border-radius: 15px;
-      max-width: 420px;
-      margin: 16px auto;
-      line-height: 1.8;
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
     }
+    .article-card {
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 20px;
+      background: #172235;
+    }
+    .article-card a { color: #67e8f9; }
     footer {
-      padding: 22px;
-      color: #cbd5e1;
-      background: #0b1120;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #334155;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>عالم شفيق 🚀</h1>
+    <h1>🚀 عالم شفيق</h1>
     <nav>
       <a href="#home">الرئيسية</a>
       <a href="#about">من أنا</a>
-      <a href="#contact">تواصل</a>
+      <a href="#articles">مقالاتي</a>
     </nav>
   </header>
 
@@ -67,25 +73,24 @@
     <div class="hero" id="home">
       <h2>مرحبًا بك في موقعي!</h2>
       <p>هذه أول خطوة لي في عالم البرمجة وتطوير المواقع.</p>
-      <a class="button" href="#about">اكتشف الموقع</a>
+      <a class="button" href="#articles">اكتشف مقالاتي</a>
     </div>
 
     <section id="about">
       <h2>من أنا؟</h2>
-      <div class="card">
-        أنا شفيق، أتعلم البرمجة باستخدام هاتفي.
-        هذا موقعي الأول الذي أنشأته باستخدام HTML وCSS.
-      </div>
+      <p>أنا شفيق، أتعلم البرمجة باستخدام هاتفي وأشارك رحلتي في عالم التقنية.</p>
     </section>
 
-    <section id="contact">
-      <h2>مشروعي الأول</h2>
-      <div class="card">
-        أتعلم كل يوم شيئًا جديدًا، وهذه مجرد البداية! 💻
+    <section id="articles">
+      <h2>مقالاتي</h2>
+      <div class="article-card">
+        <h3>تعلم البرمجة من الهاتف</h3>
+        <p>تعرّف على تجربتي في تعلم HTML وGit وGitHub باستخدام هاتف أندرويد.</p>
+        <a href="article.html">اقرأ المقال ←</a>
       </div>
     </section>
   </main>
 
-  <footer>© 2026 عالم شفيق — جميع الحقوق محفوظة</footer>
+  <footer>© 2026 عالم شفيق</footer>
 </body>
 </html>
